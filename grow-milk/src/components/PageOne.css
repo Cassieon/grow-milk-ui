@@ -1,25 +1,55 @@
-.title-pg {
+.main {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+}
+  .title-pg {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(45deg, #CDFF03, #C2F70F, #B8EF1B, #ADE628, #A3DE34, #98D640);
+      background-size: 100%;
+      color: transparent;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: trans;
+    
+    }
+    .title {
+      font-size: 250px;
+      font-weight: 900;
+      text-align: center;
+      background-size: 100%;
+    }
+
+  .fact-one {
     display: flex;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(45deg, #CDFF03, #C2F70F, #B8EF1B, #ADE628, #A3DE34, #98D640);
-    background-size: 100%;
-    color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: trans;
-  
+  } */
+
+  div > img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    /* float: right; */
   }
-  .title {
-    font-size: 250px;
-    font-weight: 900;
-    text-align: center;
-    background-size: 100%;
-    background-image: (45deg, #f3ec78, #af4261);
+  .fact-one-img {
+    /* background-image: url("https://images.pexels.com/photos/1435706/pexels-photo-1435706.jpeg"); */
+    width: 200vh;
+    height: 150vh;
+    /* background-color: rgb(0, 0, 0); */
+  }
+
+  .fact-one-text {
+    font-size: 25px;
+    font-weight: 700;
   }
   
   
