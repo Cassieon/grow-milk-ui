@@ -1,15 +1,22 @@
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+/* title main page */
 .main {
   background-color: whitesmoke;
   width: 100%;
   height: 100%;
 }
-  .title-pg {
+  .title-pg { /* Grow Milk text */
       display: flex;
       height: 100%;
       width: 100%;
       justify-content: center;
       align-items: center;
-      background-image: linear-gradient(45deg, #CDFF03, #C2F70F, #B8EF1B, #ADE628, #A3DE34, #98D640);
+      background-image: linear-gradient(45deg, #FEFE69, #DDF969, #A9F36A, #78EC6C, #A3DE34, #57E86B);
       background-size: 100%;
       color: transparent;
       -webkit-background-clip: text;
@@ -19,42 +26,235 @@
     
     }
     .title {
-      font-size: 250px;
+      font-size: 350px;
       font-weight: 900;
       text-align: center;
       background-size: 100%;
     }
 
+    /* Milk splash page 1 */
   .fact-one {
     display: flex;
-  } */
+  } 
 
-  div > img {
+   .fact-one-img {
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    position: absolute;
     left: 0px;
     top: 0px;
     z-index: -1;
-    /* float: right; */
-  }
-  .fact-one-img {
-    /* background-image: url("https://images.pexels.com/photos/1435706/pexels-photo-1435706.jpeg"); */
-    width: 200vh;
-    height: 150vh;
-    /* background-color: rgb(0, 0, 0); */
+
   }
 
+
   .fact-one-text {
+    height: 100%;
+    width: 100%;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 700; 
+    }
+
+    #line01::after {
+      content: "\a";
+      white-space: pre;
+    }
+
+    #line02::after {
+      content: "\a";
+      white-space: pre;
+    }
+
+    #line03::after {
+      content: "\a";
+      white-space: pre;
+    }
+   
+/* lady in Milk page */
+.page-three {
+  width: 100%;
+  height: 100%;
+}
+  .fact-two {
+    display: flex;
+    flex-direction: row;
+  
   }
-  
-  
-  
-  
-  
-  
-  
+
+  .fact-two-img {
+    
+    width: 100%;
+    height: 100%;
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+
+  .fact-two-text-box {
+    background-color: rgb(147, 207, 231);
+    height: 1020px;
+    width: 30vw;
+    text-align: left;
+  }
+
+  .text-align {
+    width: 300px;
+    height: 500px;
+    padding:50px;
+    padding-top: 250px;
+  }
+
+      #line1::after {
+        content: "\a";
+        white-space: pre;
+      }
+
+      #line2::after {
+        content: "\a";
+        white-space: pre;
+      }
+
+      #line3::after {
+        content: "\a";
+        white-space: pre;
+      }
+
+      #line4::after {
+        content: "\a";
+        white-space: pre;
+      }
+
+      #line5::after {
+        content: "\a";
+        white-space: pre;
+      }
+
+      #line6::after {
+        content: "\a";
+        white-space: pre;
+      }
+
+      #line7::after {
+        content: "\a";
+        white-space: pre;
+      }
+
+      .fact-two-text {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 10px;
+      }
+
+/* cow and baby page */
+.page-four {
+  width: 100%;
+  height:100%;
+  background-image: linear-gradient(45deg, #FEFE69, #DDF969, #A9F36A, #78EC6C, #A3DE34, #57E86B);
+}
+
+  .fact-three-img {
+    display: flex;
+    flex-direction: row;
+  }
+    #pg4-img1 {
+
+
+    }
+
+    #pg4-img2 {
+      width: 40vw;
+      height: 50vh;
+    }
+
+  .text-box {
+    width: 40vw;
+    height: 39vh;
+    background-color: rgba(225, 236, 236, 0.993);
+  }
+
+    .pg4-text-align {
+      padding-top: 65px;
+    }
+
+      .pg4-text {
+        font-weight: 750;
+      }
+    
+@media screen and (max-width: 450px) and (min-width: 300px) {
+  .main, .title-pg, .title {
+      font-size: 115px;
+    }
+}
+    
+@media screen and (max-width: 780px) and (min-width: 450px) {
+  .main, .title-pg, .title {
+      font-size: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 300px) {
+  .fact-one-text {
+      font-size: 12px;
+      width: 300px;
+      height: 500px;
+      justify-content: right;
+    }
+}
+    
+@media screen and (max-width: 450px) and (min-width: 300px) {
+   .fact-one-img {
+      width: 5%;
+      height: 10%;
+    }
+}
+
+@media screen and (max-width: 780px) and (min-width: 450px) {
+  .fact-one-text {
+      font-size: 15px;
+      width: 300px;
+      height: 500px;
+      justify-content: right;
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 300px) {
+  .page-three {
+      display: flex;
+      /* flex-direction: column; */
+    
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 300px) {
+  .fact-two-text-box {
+      width: 115vw;
+      height: 50vw;
+      /* padding-top: 200px; */
+    
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 300px) {
+  .fact-two-text .text-align {
+      font-size: 10px;
+      text-align: left;
+      /* width: 100px; */
+      /* height: 100px; */
+      /* padding-right: 100px; */
+      /* padding-top: 50px; */
+
+    }
+}
+
+@media screen and (max-width: 450px) and (min-width: 300px) {
+  .text-align {
+      width: 300px;
+      height: 50px;
+      padding-bottom: 500px;
+    }
+}
