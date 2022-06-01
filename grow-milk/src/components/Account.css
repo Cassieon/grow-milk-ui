@@ -1,0 +1,16 @@
+/* @import "bootstrap/dist/css/bootstrap.min.css"; */
+
+body {
+    background-color: yellow;
+    min-height: 100vh;
+}
+.big-container {
+    width: 100%;
+    height: 950px;
+}
+#main-container {
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}

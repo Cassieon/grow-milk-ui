@@ -1,12 +1,9 @@
-/* Navbar */
-.navbar {
-  width: 100%;
-  height: 100px;
-  background-color: black;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* title main page */
 .main {
-  background-color: whitesmoke;
   width: 100%;
   height: 100%;
 }
@@ -26,7 +23,7 @@
     
     }
     .title {
-      font-size: 350px;
+      font-size: 325px;
       font-weight: 900;
       text-align: center;
       background-size: 100%;
@@ -35,12 +32,14 @@
     /* Milk splash page 1 */
   .fact-one {
     display: flex;
+    width: 100%;
+    height: 100%;
   } 
 
    .fact-one-img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    max-width: 90%;
     max-height: 100%;
     left: 0px;
     top: 0px;
@@ -48,12 +47,21 @@
 
   }
 
+  .pg-one-textbox {
+    width: 500px;
+    height: 275px;
+    background-color: rgba(197, 190, 190, 0.87);
+    border-radius: 10px;
+    padding-top: 15px; 
+
+  }
 
   .fact-one-text {
     height: 100%;
     width: 100%;
     font-size: 25px;
-    font-weight: 700; 
+    font-weight: 700;
+    padding-top: 15px; 
     }
 
     #line01::after {
@@ -79,16 +87,18 @@
   .fact-two {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
   
   }
 
   .fact-two-img {
     
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    width: auto;
-    height: auto;
-    max-width: 500px;
+    /* width: auto;
+    height: auto; */
+    max-width: 100vw;
     max-height: 100%;
     left: 0px;
     top: 0px;
@@ -98,7 +108,7 @@
   .fact-two-text-box {
     background-color: rgb(147, 207, 231);
     height: 1020px;
-    width: 30vw;
+    width: 50;
     text-align: left;
   }
 
@@ -106,7 +116,7 @@
     width: 300px;
     height: 500px;
     padding:50px;
-    padding-top: 250px;
+    padding-top: 150px;
   }
 
       #line1::after {
@@ -154,21 +164,22 @@
 .page-four {
   width: 100%;
   height:100%;
-  background-image: linear-gradient(45deg, #FEFE69, #DDF969, #A9F36A, #78EC6C, #A3DE34, #57E86B);
 }
 
   .fact-three-img {
     display: flex;
     flex-direction: row;
+    width: 900%;
+    height: 800%;
   }
     #pg4-img1 {
-
-
+      width: 500px;
+      height: 600px;
     }
 
     #pg4-img2 {
-      width: 40vw;
-      height: 50vh;
+      width: 600px;
+      height: 45vh;
     }
 
   .text-box {
