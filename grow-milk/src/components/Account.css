@@ -4,13 +4,21 @@ body {
     background-color: yellow;
     min-height: 100vh;
 }
-.big-container {
-    width: 100%;
-    height: 950px;
-}
-#main-container {
-    /* display: flex; */
-    width: 100%;
-    height: 100%;
-    background-color: blue;
-}
+
+    .main-container {
+        display: flex;
+        /* width: 100%; */
+        /* height: 100%; */
+        justify-content: flex;
+        align-items: center;
+    }
+
+
+    
+        .input-container {
+            /* display: flex; */
+            flex-direction: column;
+            width: 500px;
+            height: 500px;
+            background-color: blue;
+        }

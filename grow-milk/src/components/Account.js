@@ -9,62 +9,101 @@ class Account extends React.Component {
     
     render() {
         return (
-            <div className="big-container">
-                <Navbar/>
-                <Container id="main-container" className="d-grid h-100">
-                    <Form id="form" className="text-center w-100">
-                    <form>
-  <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3"/>
-    </div>
-  </div>
-  <div class="row mb-3">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3"/>
-    </div>
-  </div>
-  <fieldset class="row mb-3">
-    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-    <div class="col-sm-10">
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked/>
-        <label class="form-check-label" for="gridRadios1">
-          First radio
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"/>
-        <label class="form-check-label" for="gridRadios2">
-          Second radio
-        </label>
-      </div>
-      <div class="form-check disabled">
-        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled/>
-        <label class="form-check-label" for="gridRadios3">
-          Third disabled radio
-        </label>
-      </div>
-    </div>
-  </fieldset>
-  <div class="row mb-3">
-    <div class="col-sm-10 offset-sm-2">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1"/>
-        <label class="form-check-label" for="gridCheck1">
-          Example checkbox
-        </label>
-      </div>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
-                    </Form>
+          <div>
+            <Navbar/>
+            <div className="main-container">
+               
+                  <div className="input-container">
+                    <h3>We need just a litte more info</h3>
+                      <form>
+                        <div className="input-boxes">
+                          <input
+                              type="email"
+                              placeholder="Email"
+                              // value={}
+                              // onChange={event =>}
+                              />
+                            <br />
+                            
+                          <input
+                              type="text"
+                              placeholder="Full Name"
+                              // value={}
+                              // onChange={event =>}
+                              />
+                            <br />
+                          
+                          <input
+                              type="text"
+                              placeholder="Address"
+                              // value={}
+                              // onChange={event =>}
+                              />
+                            <br />
+                          
+                          <p>What type of products do you prefer?</p>
+                            <input 
+                                type="checkbox" 
+                                id="soy" 
+                                name="milk-type" 
+                                value="Soy"/>
+                            <label for="soy">Soy</label>
+                            <br />  
 
-                </Container>
-            </div>
+                            <input 
+                                type="checkbox" 
+                                id="nut" 
+                                name="milk-type" 
+                                value="Nut"/>
+                            <label for="nut">Nut</label>
+                            <br />
+
+                            <input 
+                                type="checkbox" 
+                                id="plant" 
+                                name="milk-type" 
+                                value="Plant"/>
+                            <label for="plant">Plant</label>
+                            <br />
+                          
+                          <p>How many people are in your household?</p>
+                            <input 
+                                type="checkbox" 
+                                id="opt1" 
+                                name="household" 
+                                value="1"/>
+                            <label for="opt1">1-2</label>
+                            <br />
+
+                            <input 
+                                type="checkbox" 
+                                id="opt2" 
+                                name="household" 
+                                value="2"/>
+                            <label for="opt2">2-4</label>
+                            <br />
+
+                            <input 
+                                type="checkbox" 
+                                id="opt3" 
+                                name="household" 
+                                value="3"/>
+                            <label for="plant">4-6</label>
+                            <br />
+
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                // value={}
+                                // onChange={event =>}
+                                />
+                              
+                          
+                        </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
 
         )
     }

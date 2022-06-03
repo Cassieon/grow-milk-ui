@@ -21,15 +21,15 @@
     width: 800px;
     height: 800px; */
     /* background-image: linear-gradient(45deg, #FEFE69, #DDF969, #A9F36A, #78EC6C, #A3DE34, #57E86B); */
-    background-color: yellow;
+    background-color: #ffff00;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 25px;
 }
 
     .Product-one {
         width: 500px;
-        height: 500px;
+        height: 600px;
         background-color: aliceblue;
         padding: 20px;
         margin: 20px;
@@ -38,7 +38,7 @@
 
     .Product-two {
         width: 500px;
-        height: 500px;
+        height: 600px;
         background-color: aliceblue;
         padding: 20px;
         margin: 20px;
@@ -47,7 +47,7 @@
 
     .Product-three {
         width: 500px;
-        height: 500px;
+        height: 600px;
         background-color: aliceblue;
         padding: 20px;
         margin: 20px;
