@@ -16,9 +16,39 @@ body {
 
     
         .input-container {
-            /* display: flex; */
+            display: flex;
             flex-direction: column;
             width: 500px;
-            height: 500px;
+            height: 600px;
             background-color: blue;
+            justify-content: center;
+            align-items: center;
+            border-radius: 12px;
+            font-size: x-large;
         }
+            .input-boxes {
+                display: flex;
+                margin: 20px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 12px;
+                font-size: large;
+            }
+
+            .input-ckboxes {
+                text-align: center;
+                font-size: large;
+            }
+                .txtbox {
+                    border-radius: 5px;
+                    width: 200px;
+                    height: 30px;
+
+                }
+
+                .ckbox {
+                    /* border-radius: 5px; */
+                    /* width: 10px; */
+                    /* height: 30px; */
+                    font-size: large;
+                }

@@ -4,8 +4,8 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navigation/Navbar.js";
 import Hook from './components/Hook'
-import Account from './components/Account';
-// import { Link } from "react-router-dom";
+// import Account from './components/Account';
+import { Link } from "react-router-dom";
 
 
 
@@ -15,7 +15,7 @@ function App() {
       <Navbar/>
       <PageOne /> 
       <Hook/>
-      <Account />  
+      {/* <Account />   */}
     </div>
   );
 }

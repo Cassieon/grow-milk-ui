@@ -15,32 +15,37 @@ class Account extends React.Component {
                
                   <div className="input-container">
                     <h3>We need just a litte more info</h3>
-                      <form>
+                      <Form>
                         <div className="input-boxes">
-                          <input
+                          <input className="txtbox"
                               type="email"
                               placeholder="Email"
                               // value={}
                               // onChange={event =>}
                               />
-                            <br />
-                            
-                          <input
+                        </div>
+
+                        <div className="input-boxes">     
+                          <input className="txtbox"
                               type="text"
                               placeholder="Full Name"
                               // value={}
                               // onChange={event =>}
                               />
-                            <br />
-                          
-                          <input
+                        </div>
+
+
+                        <div className="input-boxes">  
+                          <input className="txtbox"
                               type="text"
                               placeholder="Address"
                               // value={}
                               // onChange={event =>}
                               />
-                            <br />
-                          
+                        </div>
+
+
+                        <div className="input-ckboxes">  
                           <p>What type of products do you prefer?</p>
                             <input 
                                 type="checkbox" 
@@ -65,7 +70,9 @@ class Account extends React.Component {
                                 value="Plant"/>
                             <label for="plant">Plant</label>
                             <br />
-                          
+                        </div>
+
+                        <div className="input-ckboxes">
                           <p>How many people are in your household?</p>
                             <input 
                                 type="checkbox" 
@@ -83,7 +90,7 @@ class Account extends React.Component {
                             <label for="opt2">2-4</label>
                             <br />
 
-                            <input 
+                            <input className="ckbox"
                                 type="checkbox" 
                                 id="opt3" 
                                 name="household" 
@@ -91,16 +98,17 @@ class Account extends React.Component {
                             <label for="plant">4-6</label>
                             <br />
 
-                            <input
+                        <div className="input-boxes">
+                            <input className="txtbox"
                                 type="password"
                                 placeholder="Password"
                                 // value={}
                                 // onChange={event =>}
                                 />
-                              
-                          
                         </div>
-                      </form>
+
+                        </div>
+                      </Form>
                   </div>
               </div>
           </div>
