@@ -3,10 +3,33 @@
 @tailwind utilities;
 
 /* title main page */
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll; 
+
+
+}
+/* .snap {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll; */
+/* } */
 .main {
   width: 100%;
   height: 100%;
+  /* scroll-snap-type: y mandatory;
+  overflow-y: scroll; */
+  /* scroll-snap-align: start; */
 }
+
+  #img1 {
+    width: 100vw;
+    height: 100vh;
+    /* scroll-snap-align: start; */
+    
+
+
+
+  }
   .title-pg { /* Grow Milk text */
       display: flex;
       height: 100%;
@@ -20,6 +43,9 @@
       -moz-background-clip: text;
       -webkit-text-fill-color: transparent; 
       -moz-text-fill-color: trans;
+      /* scroll-snap-align: start; */
+
+
     
     }
     .title {
@@ -27,6 +53,8 @@
       font-weight: 900;
       text-align: center;
       background-size: 100%;
+      /* scroll-snap-align: start; */
+
     }
 
     /* Milk splash page 1 */
@@ -34,16 +62,20 @@
     display: flex;
     width: 100%;
     height: 100%;
+    /* scroll-snap-align: start; */
+
   } 
 
    .fact-one-img {
-    width: 100vw;
-    height: 100vh;
+    width: 1800px;
+    height: 900px;
     max-width: 90%;
     max-height: 100%;
     left: 0px;
     top: 0px;
     z-index: -1;
+    /* scroll-snap-align: start; */
+
 
   }
 
@@ -53,7 +85,8 @@
     background-color: rgba(197, 190, 190, 0.87);
     border-radius: 10px;
     padding-top: 15px; 
-
+    /* scroll-snap-align: start; */
+    
   }
 
   .fact-one-text {
@@ -62,27 +95,17 @@
     font-size: 25px;
     font-weight: 700;
     padding-top: 15px; 
+    /* scroll-snap-align: start; */
+
     }
 
-    #line01::after {
-      content: "\a";
-      white-space: pre;
-    }
-
-    #line02::after {
-      content: "\a";
-      white-space: pre;
-    }
-
-    #line03::after {
-      content: "\a";
-      white-space: pre;
-    }
+   
    
 /* lady in Milk page */
 .page-three {
   width: 100%;
   height: 100%;
+
 }
   .fact-two {
     display: flex;
@@ -94,8 +117,8 @@
 
   .fact-two-img {
     
-    width: 100vw;
-    height: 100%;
+    width: 2000px;
+    height: 1100px;
     /* width: auto;
     height: auto; */
     max-width: 100vw;
@@ -107,7 +130,7 @@
 
   .fact-two-text-box {
     background-color: rgb(147, 207, 231);
-    height: 1020px;
+    height: 950px;
     width: 50;
     text-align: left;
   }
@@ -115,44 +138,15 @@
   .text-align {
     width: 300px;
     height: 500px;
-    padding:50px;
-    padding-top: 150px;
+    padding:45px;
+    padding-top: 120px;
   }
 
-      #line1::after {
+      #line::after {
         content: "\a";
         white-space: pre;
       }
 
-      #line2::after {
-        content: "\a";
-        white-space: pre;
-      }
-
-      #line3::after {
-        content: "\a";
-        white-space: pre;
-      }
-
-      #line4::after {
-        content: "\a";
-        white-space: pre;
-      }
-
-      #line5::after {
-        content: "\a";
-        white-space: pre;
-      }
-
-      #line6::after {
-        content: "\a";
-        white-space: pre;
-      }
-
-      #line7::after {
-        content: "\a";
-        white-space: pre;
-      }
 
       .fact-two-text {
       font-size: 20px;
@@ -169,21 +163,21 @@
   .fact-three-img {
     display: flex;
     flex-direction: row;
-    width: 900%;
-    height: 800%;
+    /* width: 100%; */
+    /* height: 100%; */
   }
     #pg4-img1 {
       width: 500px;
-      height: 600px;
+      height: 700px;
     }
 
     #pg4-img2 {
-      width: 600px;
-      height: 45vh;
+      width: 100vw;
+      height: 46vh;
     }
 
   .text-box {
-    width: 40vw;
+    width: 35vw;
     height: 39vh;
     background-color: rgba(225, 236, 236, 0.993);
   }
@@ -195,7 +189,26 @@
       .pg4-text {
         font-weight: 750;
       }
-    
+
+/* .main-btm {
+      scroll-snap-align: start;
+
+}*/
+
+.main-fin {
+  width: 100vw;
+  height: 100vh;
+}
+
+#fin {
+  width: 2000vw;
+  height: 100vh;
+}
+
+.title-fin {
+  font-size: xx-large;
+}
+     
 @media screen and (max-width: 450px) and (min-width: 300px) {
   .main, .title-pg, .title {
       font-size: 115px;

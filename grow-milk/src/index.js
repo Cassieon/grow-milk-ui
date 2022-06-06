@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import Account from './components/Account';
 import Hook from './components/Hook';
+import Checkout from './components/Checkout';
+
 import {
   BrowserRouter,
   Routes,
@@ -11,6 +13,7 @@ import {
 } from "react-router-dom";
 
 import reportWebVitals from './reportWebVitals';
+import { getCheckboxUtilityClass } from '@mui/material';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +23,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="account" element={<Account />} />
       <Route path="hook" element={<Hook />} />
+      <Route path="checkout" element={<Checkout />} />
     </Routes>
   </BrowserRouter>
 );

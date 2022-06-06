@@ -1,11 +1,14 @@
 import React from "react";
-// import './CSS/Navbar.css';
+import '../CSS/Navbar.css';
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.css';
 
 
-const Navbar = () => {
+class Navbar extends React.Component {
+  
+  render() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light nav1" id="nav">
   <Link to='/'><a className="navbar-brand" href="#home">Home</a></Link>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -19,5 +22,6 @@ const Navbar = () => {
   </div>
 </nav>
     )
+  }
 }
 export default Navbar

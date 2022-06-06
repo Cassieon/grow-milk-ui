@@ -1,0 +1,58 @@
+/* @import "bootstrap/dist/css/bootstrap.min.css"; */
+
+body {
+    background-color: rgb(255, 255, 137);
+    min-height: 100vh;
+}
+
+    .main-container {
+        display: flex;
+        /* width: 100%; */
+        /* height: 100%; */
+        justify-content: flex;
+        align-items: center;
+        padding: 100px;
+    }
+
+
+    
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 600px;
+            background-image: linear-gradient(45deg, #FEFE69, #DDF969, #A9F36A, #78EC6C, #A3DE34, #57E86B);
+            justify-content: center;
+            border-color: #A3DE34;
+            align-items: center;
+            border-radius: 12px;
+            font-size: x-large;
+            color: rgb(97, 99, 96);
+            font-weight: 600;
+        }
+            .input-boxes {
+                display: flex;
+                margin: 20px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 12px;
+                font-size: large;
+            }
+
+            .input-ckboxes {
+                text-align: center;
+                font-size: large;
+            }
+                .txtbox {
+                    border-radius: 5px;
+                    width: 200px;
+                    height: 30px;
+
+                }
+
+                .ckbox {
+                    /* border-radius: 5px; */
+                    /* width: 10px; */
+                    /* height: 30px; */
+                    font-size: large;
+                }
